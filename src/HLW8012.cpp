@@ -87,7 +87,7 @@ double HLW8012::getCurrent() {
 
 }
 
-unsigned int HLW8012::getVoltage() {
+double HLW8012::getVoltage() {
     if (_use_interrupts) {
         _checkCF1Signal();
     } else if (_mode != _current_mode) {
@@ -97,7 +97,7 @@ unsigned int HLW8012::getVoltage() {
     return _voltage;
 }
 
-unsigned int HLW8012::getActivePower() {
+double HLW8012::getActivePower() {
     if (_use_interrupts) {
         _checkCFSignal();
     } else {

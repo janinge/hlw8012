@@ -83,8 +83,8 @@ class HLW8012 {
         hlw8012_mode_t toggleMode();
 
         double getCurrent();
-        unsigned int getVoltage();
-        unsigned int getActivePower();
+        double getVoltage();
+        double getActivePower();
         unsigned int getApparentPower();
         double getPowerFactor();
         unsigned int getReactivePower();
